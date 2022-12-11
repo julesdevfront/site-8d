@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock</title>
+</head>
+<body>
+    <header>
+
+        <nav class="navbar">
+            <div class="logo">
+                <h1 class="title-logo">New Sounds <span style="color: red;" >8D</span></h1>
+               <!--<img src="media/images.png" alt="" class="logo-img">-->
+            </div>
+                <div class="nav-linksactive">
+    
+                    <div class="nav-links">
+                        <ul>
+                            <li>
+                                
+                                <a href="index.html">Home</a>
+                                <a href="index.html" style="scroll-behavior:smooth;">Sounds</a>
+                                <a href="">Support</a>
+                                 <a href="">sign-in</a>
+                                <a href="">sign-up</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+    <div class="menu-hamburger">
+    
+        <button class="box b2">
+            <div class="container-lignes">
+              <div class="ligne"></div>
+              <div class="ligne"></div>
+              <div class="ligne"></div>
+            </div>
+          </button>
+            </div>
+    
+    </div>
+    
+        
+        
+        </nav>
+    
+    </header>
+    <h1 style="padding-top: 150px;">Nous n'avons pas de sons rock ... pour le Moment !</h1>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

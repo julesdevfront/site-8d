@@ -1,0 +1,423 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: relative;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+    border-bottom: 1px black solid;
+    height: 60px;
+    position: fixed;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+}
+
+.navbar .logo {
+    height: 5px;
+    width: 250px;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.title-logo {
+     text-align: center;
+     align-items: center;
+     margin: 0px 15px;
+     font-family: 'Heebo', sans-serif;
+     font-weight: 300;
+}
+
+.navbar .logo-img {
+    height: 20px;
+    width: 25px;
+
+}
+
+.nav-links {
+    width: 100%;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    
+}
+
+
+.navbar .nav-links ul li a {
+    margin: 25px;
+}
+
+.navbar .menu-hamburger {
+    position: absolute;
+    display: none;
+    right: 10px;
+    width: 100px;
+}
+
+.box {
+  margin: 10px;
+  width: 150px;
+  height: 100px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  background-color: black;
+}
+.container-lignes {
+  background-color: black;
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  margin-right: 10px;
+}
+.ligne {
+  position: absolute;
+  border-radius: 10px;
+  width: 100px;
+  height: 10px;
+  background: rgb(255, 255, 255);
+}
+.box .ligne:nth-child(1){
+  top: 0px;
+}
+.box .ligne:nth-child(2){
+  top: 25px;
+}
+.box .ligne:nth-child(3){
+  top: 50px;
+}
+
+
+  .b2 .ligne:nth-child(1){
+    transition:   top 0.4s 0.4s ease-in-out;
+  }
+  
+  .ligne:nth-child(3){
+    transform: rotate(0deg);
+    transition:   
+    transform 0.4s ease-in-out,
+    top 0.4s 0.4s ease-in-out;
+  }
+  .b2 .ligne:nth-child(2) {
+    transition: opacity 0.4s 0.4s ease-in-out;
+  }
+  
+  
+  .b2.active .ligne:nth-child(1){
+    top: 25px;
+    transition:   
+    top 0.4s  ease-in-out,
+    transform 0.4s 0.4s ease-in-out;
+  }
+  .b2.active .ligne:nth-child(2){
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+  }
+  .b2.active .ligne:nth-child(3){
+    top: 25px;
+    transform: rotate(-90deg);
+    transition:   
+    top 0.4s  ease-in-out,
+    transform 0.4s 0.4s ease-in-out;
+  }
+  
+  
+  .title {
+    padding-top: 200px;
+    text-align: center;
+    font-family:  sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+
+  }
+
+  .eightd-icon {
+    width: 100px;
+    margin-top: 30px;
+
+  }
+
+  .presentation {
+    text-align: center;
+    height: 100vh;
+    font-family:  sans-serif;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .presentation-text {
+    margin-top: 30px;
+  }
+
+  .test {
+    margin-top: 50px;
+  }
+
+  *, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.grid-title {
+  margin-bottom: 50px;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.grille {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    /* border: 1px solid #333; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 500px);
+    justify-content: center;
+    grid-gap: 15px;
+}
+.grid-item {
+    width: 500px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-grid {
+  height: 70%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.description-title {
+  font-weight: 100;
+  font-size: 2.5em;
+  font-style: oblique;
+}
+
+.information-title {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 10px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.logo-grid {
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.anglobation {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.img-logo-chanel {
+  border-radius: 20px;
+  height: 35px;
+  width: 40px;
+}
+
+.genres {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.button-music {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 70px;
+  margin-bottom: 100px;
+
+}
+
+.button-music button {
+  height: 100px;
+  background-color: white;
+  border: 1px black solid;
+  width: 150px;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.button-music button:hover {
+  background-color: black;
+  color: whitesmoke;
+  border-color: whitesmoke;
+}
+
+.card-rap {
+
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+  
+
+
+}
+
+.homepage-rap  {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rap-title {
+  margin: 50px 0;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+@media screen and (max-width:1040px) {
+
+  .card-rap {
+    display: inline-block;
+    flex-wrap: wrap;
+    display: block;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+ 
+    
+
+  }
+
+}
+
+.ytb {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:900px){
+
+    .navbar .menu-hamburger {
+        display: flex;
+        position: absolute;
+        z-index: 1;
+    }
+
+
+    .nav-links {
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        border-left: 1px rgb(255, 255, 255) solid;
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        display: flex;
+        margin-right: -100%;
+        transition: all 0.5s;
+    }
+
+    .mobile-menu {
+        margin-right: 0;
+    }
+
+
+
+    .nav-links ul li {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+
+
+    }
+
+    .nav-links ul {
+        margin-top: 20px;
+    }
+
+    .nav-links ul li a {
+        margin:5px;
+        font-size: 2em;
+        letter-spacing: 0px;
+    
+    }
+
+    .sign {
+        color: grey;
+        font-size: 1em;
+
+    }
+
+    .grid-title {
+      margin-top: 200px;
+      margin-bottom: 50px;
+    }
+
+    .button-music {
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 70px;
+    
+    }
+
+    .genres {
+      margin-top: 200px;
+      text-align: center;
+    }
+
+
+
+}
